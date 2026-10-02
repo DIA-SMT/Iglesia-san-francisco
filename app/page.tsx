@@ -9,8 +9,8 @@ export default function Home() {
       {/* ─────────── HERO ─────────── */}
       <section className="relative isolate min-h-[92svh] overflow-hidden text-white">
         <HeroSlideshow />
-        <div className="absolute inset-0 bg-gradient-to-b from-tinta/55 via-tinta/35 to-tinta/85" />
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-crema to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-tinta/55 via-tinta/30 to-tinta/75" />
+        <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-crema to-transparent sm:h-36" />
 
         <div className="relative mx-auto flex min-h-[92svh] max-w-5xl flex-col px-6 pb-28 pt-8 sm:px-8">
           <header className="fade-up flex items-center justify-between text-xs uppercase tracking-[0.22em] text-white/80">
@@ -18,16 +18,16 @@ export default function Home() {
             <span className="hidden sm:inline">{SITIO.ciudad}</span>
           </header>
 
-          <div className="mt-auto max-w-3xl">
-            <p className="fade-up mb-5 inline-flex items-center gap-3 rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.2em] backdrop-blur-sm">
+          <div className="mt-auto max-w-3xl pt-10">
+            <p className="fade-up mb-5 inline-flex items-center gap-2.5 whitespace-nowrap rounded-full border border-white/30 bg-white/10 px-3.5 py-1.5 text-[11px] font-medium uppercase tracking-[0.14em] backdrop-blur-sm sm:gap-3 sm:px-4 sm:text-xs sm:tracking-[0.2em]">
               <span className="h-1.5 w-1.5 rounded-full bg-ocre" />
               Campaña de restauración
             </p>
-            <h1 className="fade-up-2 font-display text-4xl font-bold leading-[1.08] sm:text-5xl md:text-6xl">
+            <h1 className="fade-up-2 font-display text-4xl font-bold leading-[1.08] sm:text-5xl md:text-6xl xl:text-7xl">
               Ayudemos a restaurar la{" "}
               <span className="text-celeste-claro">Iglesia San Francisco</span>
             </h1>
-            <p className="fade-up-3 mt-6 max-w-xl text-lg leading-relaxed text-white/85 sm:text-xl">
+            <p className="fade-up-3 mt-6 max-w-xl text-lg leading-relaxed text-white/85 sm:text-xl xl:max-w-2xl xl:text-2xl">
               Un patrimonio que forma parte de nuestra historia necesita del
               compromiso de todos.
             </p>
@@ -55,10 +55,10 @@ export default function Home() {
       {/* ─────────── DONAR ─────────── */}
       <section
         id="donar"
-        className="relative mx-auto -mt-20 max-w-3xl scroll-mt-6 px-5 sm:px-8"
+        className="relative mx-auto -mt-20 max-w-3xl scroll-mt-6 px-4 sm:px-8 lg:max-w-4xl"
       >
         <div className="overflow-hidden rounded-3xl border border-tinta/10 bg-white shadow-2xl shadow-tinta/10">
-          <div className="border-b border-tinta/10 bg-celeste-claro/60 px-6 py-5 sm:px-10">
+          <div className="border-b border-tinta/10 bg-celeste-claro/60 px-5 py-5 sm:px-10">
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-celeste-oscuro">
               Doná por transferencia
             </p>
@@ -67,13 +67,13 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="px-6 py-8 sm:px-10 sm:py-10">
+          <div className="px-5 py-7 sm:px-10 sm:py-10">
             <p className="text-sm font-medium uppercase tracking-[0.18em] text-tinta-suave">
               Alias
             </p>
             <div className="mt-3 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p
-                className="select-all break-all font-mono text-2xl font-semibold tracking-wide text-tinta sm:text-3xl"
+                className="select-all font-mono text-[clamp(1.05rem,5.8vw,1.875rem)] font-semibold tracking-wide text-tinta"
                 aria-label={`Alias ${DONACION.alias}`}
               >
                 {DONACION.alias}
@@ -87,7 +87,7 @@ export default function Home() {
               pegalo como destinatario y elegí el monto que quieras aportar.
             </p>
 
-            <ol className="mt-8 grid gap-4 sm:grid-cols-3">
+            <ol className="mt-8 grid gap-3 sm:grid-cols-3 sm:gap-4">
               {[
                 ["1", "Abrí tu app", "Del banco o de la billetera que uses."],
                 ["2", "Pegá el alias", "En “Nuevo destinatario” o “Transferir”."],
@@ -95,13 +95,15 @@ export default function Home() {
               ].map(([n, t, d]) => (
                 <li
                   key={n}
-                  className="rounded-2xl border border-tinta/8 bg-crema/70 p-4"
+                  className="flex items-start gap-3 rounded-2xl border border-tinta/8 bg-crema/70 p-4 sm:block"
                 >
-                  <span className="font-display text-2xl font-bold text-ocre-oscuro">
+                  <span className="font-display w-5 shrink-0 text-2xl font-bold leading-none text-ocre-oscuro sm:w-auto sm:leading-normal">
                     {n}
                   </span>
-                  <p className="mt-1 font-semibold text-tinta">{t}</p>
-                  <p className="mt-0.5 text-sm text-tinta-suave">{d}</p>
+                  <div>
+                    <p className="font-semibold text-tinta sm:mt-1">{t}</p>
+                    <p className="mt-0.5 text-sm text-tinta-suave">{d}</p>
+                  </div>
                 </li>
               ))}
             </ol>
@@ -198,7 +200,7 @@ export default function Home() {
 
       {/* ─────────── CTA FINAL ─────────── */}
       <section className="mx-auto max-w-6xl px-6 py-20 sm:px-8">
-        <div className="relative overflow-hidden rounded-3xl bg-tinta px-6 py-14 text-center text-white sm:px-12 sm:py-20">
+        <div className="relative overflow-hidden rounded-3xl bg-tinta px-5 py-12 text-center text-white sm:px-12 sm:py-20">
           <div
             aria-hidden="true"
             className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-celeste/25 blur-3xl"
@@ -216,8 +218,8 @@ export default function Home() {
           <p className="relative mx-auto mt-4 max-w-xl text-white/75">
             Transferí al alias y compartí esta página con quien quieras que se sume.
           </p>
-          <div className="relative mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <p className="font-mono text-xl font-semibold tracking-wide sm:text-2xl">
+          <div className="relative mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-5">
+            <p className="font-mono text-[clamp(1rem,5.5vw,1.5rem)] font-semibold tracking-wide">
               {DONACION.alias}
             </p>
             <CopyButton

@@ -93,7 +93,7 @@ export default function HeroSlideshow() {
       })}
 
       {!reduceMotion && (
-        <div className="absolute bottom-36 right-6 z-10 flex gap-2 sm:bottom-40 sm:right-8">
+        <div className="absolute bottom-24 left-6 z-10 flex gap-2 sm:bottom-40 sm:left-auto sm:right-8">
           {SLIDES.map((slide, i) => (
             <button
               key={slide.src}
