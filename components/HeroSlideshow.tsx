@@ -21,11 +21,6 @@ const SLIDES: Slide[] = [
     alt: "Fachada de la Iglesia San Francisco bajo el cielo de Tucumán",
     position: "40% 35%",
   },
-  {
-    src: "/img/hero/obra-nave.webp",
-    alt: "Vecinos y prensa recorriendo la nave de la iglesia durante la obra",
-    position: "center 45%",
-  },
 ];
 
 const INTERVAL_MS = 7000;
