@@ -1,4 +1,5 @@
 import Image from "next/image";
+import HeroSlideshow from "@/components/HeroSlideshow";
 import CopyButton from "@/components/CopyButton";
 import { DONACION, SITIO } from "@/lib/donacion";
 
@@ -7,14 +8,7 @@ export default function Home() {
     <main className="flex-1">
       {/* ─────────── HERO ─────────── */}
       <section className="relative isolate min-h-[92svh] overflow-hidden text-white">
-        <Image
-          src="/img/fachada.webp"
-          alt="Fachada celeste de la Iglesia San Francisco, San Miguel de Tucumán"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-[55%_30%] md:object-[center_35%]"
-        />
+        <HeroSlideshow />
         <div className="absolute inset-0 bg-gradient-to-b from-tinta/55 via-tinta/35 to-tinta/85" />
         <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-crema to-transparent" />
 
