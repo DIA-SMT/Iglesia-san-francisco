@@ -29,9 +29,9 @@ export default function Home() {
               <span className="h-1.5 w-1.5 rounded-full bg-ocre" />
               Campaña de restauración
             </p>
-            <h1 className="fade-up-2 font-display text-[2.75rem] font-semibold leading-[1.02] tracking-tight sm:text-6xl md:text-7xl">
+            <h1 className="fade-up-2 font-display text-4xl font-bold leading-[1.08] sm:text-5xl md:text-6xl">
               Ayudemos a restaurar la{" "}
-              <span className="italic text-celeste-claro">Iglesia San Francisco</span>
+              <span className="text-celeste-claro">Iglesia San Francisco</span>
             </h1>
             <p className="fade-up-3 mt-6 max-w-xl text-lg leading-relaxed text-white/85 sm:text-xl">
               Un patrimonio que forma parte de nuestra historia necesita del
@@ -68,7 +68,7 @@ export default function Home() {
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-celeste-oscuro">
               Doná por transferencia
             </p>
-            <h2 className="font-display mt-1 text-3xl font-semibold text-tinta sm:text-4xl">
+            <h2 className="font-display mt-1 text-2xl font-bold text-tinta sm:text-3xl">
               Transferí al alias de la iglesia
             </h2>
           </div>
@@ -103,7 +103,7 @@ export default function Home() {
                   key={n}
                   className="rounded-2xl border border-tinta/8 bg-crema/70 p-4"
                 >
-                  <span className="font-display text-2xl font-semibold text-ocre-oscuro">
+                  <span className="font-display text-2xl font-bold text-ocre-oscuro">
                     {n}
                   </span>
                   <p className="mt-1 font-semibold text-tinta">{t}</p>
@@ -148,7 +148,7 @@ export default function Home() {
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-celeste-oscuro">
               Por qué importa
             </p>
-            <h2 className="font-display mt-3 text-4xl font-semibold leading-tight text-tinta sm:text-5xl">
+            <h2 className="font-display mt-3 text-3xl font-bold leading-tight text-tinta sm:text-4xl">
               Siglos de historia en el corazón de Tucumán
             </h2>
             <div className="mt-6 space-y-4 text-lg leading-relaxed text-tinta-suave">
@@ -163,7 +163,7 @@ export default function Home() {
                 deterioro en el interior y la fachada. Restaurarla es cuidar un
                 patrimonio que es de todos.
               </p>
-              <p className="font-display text-2xl italic text-tinta">
+              <p className="font-display text-xl font-medium italic text-tinta">
                 “Cada aporte ayuda a conservar este lugar para las próximas
                 generaciones.”
               </p>
@@ -216,7 +216,7 @@ export default function Home() {
           <p className="relative text-xs font-semibold uppercase tracking-[0.22em] text-celeste-claro">
             Sumate hoy
           </p>
-          <h2 className="font-display relative mt-3 text-4xl font-semibold sm:text-5xl">
+          <h2 className="font-display relative mt-3 text-3xl font-bold sm:text-4xl">
             Tu aporte deja huella
           </h2>
           <p className="relative mx-auto mt-4 max-w-xl text-white/75">

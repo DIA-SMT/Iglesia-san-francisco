@@ -30,7 +30,7 @@ export default async function QrPage() {
       <p className="text-xs font-semibold uppercase tracking-[0.22em] text-celeste-oscuro">
         Uso interno
       </p>
-      <h1 className="font-display mt-2 text-4xl font-semibold text-tinta">
+      <h1 className="font-display mt-2 text-3xl font-bold text-tinta">
         QR para el banner
       </h1>
       <p className="mt-3 text-tinta-suave">
