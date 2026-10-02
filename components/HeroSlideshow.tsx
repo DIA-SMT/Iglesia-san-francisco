@@ -17,16 +17,6 @@ const SLIDES: Slide[] = [
     position: "55% 30%",
   },
   {
-    src: "/img/hero/obra-altar.webp",
-    alt: "Equipo de restauración con cascos frente al retablo mayor con andamios",
-    position: "center 35%",
-  },
-  {
-    src: "/img/hero/obra-planos.webp",
-    alt: "Arquitectos revisando los planos de la restauración dentro de la iglesia",
-    position: "center 40%",
-  },
-  {
     src: "/img/hero/fachada-dia.webp",
     alt: "Fachada de la Iglesia San Francisco bajo el cielo de Tucumán",
     position: "40% 35%",
